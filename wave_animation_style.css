@@ -1,0 +1,62 @@
+body {
+	background-color: black;
+}
+
+.main {
+	text-align: center;
+	font-family: monospace;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.letter {
+	animation: wave 1.5s ease infinite;
+	display: inline-block; /*For inline all letters*/
+	font-size: 80px;
+	position: relative;
+}
+
+/*Letter Animation delay time*/
+
+.L1 {
+	animation-delay: 0;
+}
+.L2 {
+	animation-delay: 100ms;
+}
+.L3 {
+	animation-delay: 200ms;
+}
+.L4 {
+	animation-delay: 300ms;
+}
+.L5 {
+	animation-delay: 400ms;
+}
+.L6 {
+	animation-delay: 500ms;
+}
+.L7 {
+	animation-delay: 600ms;
+}
+.L8 {
+	animation-delay: 700ms;
+}
+.L9 {
+	animation-delay: 800ms;
+}
+
+@keyframes wave{
+	0%, 60%, 100% {
+		transform: initial;
+		color: #3F51B5;
+	}
+
+	30% {
+		transform: translateY(-15px);
+		color: #ff1100;
+	}
+}
